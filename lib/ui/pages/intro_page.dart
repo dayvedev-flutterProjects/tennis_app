@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:tennis_app/utils/image_paths.dart';
+import 'package:tennis_app/utils/routes.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -33,18 +34,22 @@ class IntroPage extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 30.0, fontWeight: FontWeight.bold
                     ),
-                    child: AnimatedTextKit(
-                      isRepeatingAnimation: false,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left:24.0),
+                      child: AnimatedTextKit(
+                        isRepeatingAnimation: false,
 
-                      animatedTexts: [
-                        TypewriterAnimatedText('SPORTVOLO'),
-                      ],
-                      onFinished: () {
-                        print("Tap Event");
-                      },
-                      onTap: () {
-                        print("Tap Event");
-                      },
+                        animatedTexts: [
+                          TypewriterAnimatedText('SPORTVOLO', speed: Duration(milliseconds: 100)),
+                        ],
+                        onFinished: () {
+                          Navigator.pushNamed(context, Routes.homePage);
+                          print("Tap Event");
+                        },
+                        onTap: () {
+                          print("Tap Event");
+                        },
+                      ),
                     ),
                   ),
                 ),
