@@ -8,7 +8,7 @@ class ImagePaths {
   static const introBg = 'assets/images/intro.png';
   static const intro = 'assets/images/intro.png';
 
-  static final coin = 'assets/images/coin.jpeg';
+  static final topMatchCard = 'assets/images/top_matches_card.png';
   static final cylinder = 'assets/images/cylinder.jpeg';
 
   static final imgMoveIn = 'assets/images/move_in.png';
