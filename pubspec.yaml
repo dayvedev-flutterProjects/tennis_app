@@ -30,6 +30,11 @@ dependencies:
   flutter:
     sdk: flutter
   animated_text_kit: ^4.2.1
+  animations: ^2.0.2
+  #carousel slider library
+  carousel_slider: ^4.0.0
+  smooth_page_indicator: ^1.0.0+2
+  flag: ^6.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
