@@ -138,14 +138,15 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 5,),
 
               Card(
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
                 child: ListTile(
                   leading: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
-                      child: Flag.fromCode(FlagsCode.AU, height: 46, width: 46)),
+                      //child: Flag.fromCode(FlagsCode.AU, height: 46, width: 46)),
+                      child: Flag.fromString("AU", height: 46, width: 46)),
                   title: Text("Australia Open"),
                   subtitle: Text("ATP"),
                   trailing: SizedBox(
