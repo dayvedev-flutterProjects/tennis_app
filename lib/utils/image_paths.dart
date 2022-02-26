@@ -9,6 +9,7 @@ class ImagePaths {
   static const intro = 'assets/images/intro.png';
 
   static final topMatchCard = 'assets/images/top_matches_card.png';
+  static final matchScoreDetailsHeader = 'assets/images/scores_header.png';
   static final cylinder = 'assets/images/cylinder.jpeg';
 
   static final imgMoveIn = 'assets/images/move_in.png';
@@ -34,5 +35,8 @@ class ImagePaths {
   //PaymentsPage
   static final transactions = 'assets/images/transactions.png';
 
+  static const String rNadal= 'https://www.tennisworldusa.org/world_cms/images/tennis_players/player105.png';
+  static const String dMedvedev= 'https://i.goalzz.com/?i=o%2Fn%2F6%2F14%2Fdaniil-medvedev-1.png';
+  static const String rFederer= 'https://www.tennisworldusa.org/world_cms/images/tennis_players/player104.png';
 
 }
