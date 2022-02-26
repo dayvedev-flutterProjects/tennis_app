@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:tennis_app/ui/pages/home_nav.dart';
 import 'package:tennis_app/ui/pages/intro_page.dart';
+import 'package:tennis_app/ui/pages/match_details_page.dart';
 import 'package:tennis_app/ui/pages/nav/home_page.dart';
 import 'package:tennis_app/ui/pages/tournament_details_page.dart';
 
@@ -13,7 +14,7 @@ class Routes {
   static const apiTestPage = '/apiTestPage';
   static const tournamentDetailsPage = '/tournamentDetailsPage';
 
-  static const userSettingsPage = '/settings';
+  static const matchDetailsPage = '/matchDetailsPage';
 
   static const selectOperationsView = '/selectOperationsView';
   static const pickOperandsView = '/pickOperandsView';
@@ -55,7 +56,7 @@ class Routes {
       introPage: (BuildContext context) => const IntroPage(),
       //loginPage: (context) => LoginPage(),
        tournamentDetailsPage: (context) => const TournamentDetailsPage(),
-      //  selectOperationsView: (context) => const SelectOperationsView(),
+      matchDetailsPage: (context) => const MatchDetailsPage(),
       // pickOperandsView: (context) => const PickOperandsView(),
       // showResultsView: (context) => ShowResultsView(),
 
