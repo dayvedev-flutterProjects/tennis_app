@@ -5,6 +5,8 @@ import 'package:tennis_app/ui/widgets/atoms/tournament_rounds_box.dart';
 import 'package:tennis_app/ui/widgets/molecules/match_scores_card.dart';
 import 'package:tennis_app/utils/colors.dart';
 
+import '../../utils/routes.dart';
+
 class TournamentDetailsPage extends StatefulWidget {
   const TournamentDetailsPage({Key? key}) : super(key: key);
 
@@ -14,10 +16,14 @@ class TournamentDetailsPage extends StatefulWidget {
 
 class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
 
+  //List<Widget> stories = List.generate(10, (index) => StoryCard(index: index,));
+
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
 
         title: const Text("Australian Open", style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black),),
@@ -31,7 +37,7 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SizedBox(height: 25,),
+                const SizedBox(height: 12,),
 
 
                 InkWell(
@@ -64,13 +70,34 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
                     return TournamentRoundsBox(
                       tournamentRound: AppStockData.tournamentRounds[index],
                       boxColor: index==0 ? AppColors.appLightGreen: null,
-                      textColor: index==0 ? Colors.white: Colors.grey[200],
+                      textColor: index==0 ? Colors.white: Colors.grey,
                     );
                   }),
 
                 ),
 
-                MatchScoresCard(),
+                const SizedBox(height: 20,),
+
+
+                InkWell(
+                  onTap: ()=> Navigator.pushNamed(context, Routes.matchDetailsPage),
+                  child: MatchScoresCard(
+                    round: "1st Round",
+                    arena: "Court 7",
+                    playStatus: "Live",
+                    player1Avatar: "",
+                    player1Name: "R. Nadal",
+                    player1Scores: "3  7  6  7",
+                    // player1Scores: "3  7",
+                    player2Name: "D. Medvedev",
+                    player2Scores: "6  5  3  6",
+                    // player2Scores: "6  6",
+
+                    player2Avatar: "",
+                    player1DidWin: true,
+
+                  ),
+                ),
 
               ],
             ),
