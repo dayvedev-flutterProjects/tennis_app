@@ -1,10 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:tennis_app/models/app_stock_data.dart';
+import 'package:tennis_app/models/match_score.dart';
 import 'package:tennis_app/ui/widgets/atoms/tournament_rounds_box.dart';
 import 'package:tennis_app/ui/widgets/molecules/match_scores_card.dart';
 import 'package:tennis_app/utils/colors.dart';
 
+import '../../utils/image_paths.dart';
 import '../../utils/routes.dart';
 
 class TournamentDetailsPage extends StatefulWidget {
@@ -16,7 +18,25 @@ class TournamentDetailsPage extends StatefulWidget {
 
 class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
 
-  //List<Widget> stories = List.generate(10, (index) => StoryCard(index: index,));
+  List<Widget> matchScores = List.generate(AppStockData.matchScores.length, (index) {
+    MatchScore matchScore = AppStockData.matchScores[index];
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: MatchScoresCard(
+            round: matchScore.round,
+            arena: matchScore.arena,
+            playStatus: matchScore.playStatus,
+            player1Name: matchScore.player1Name,
+            player2Name: matchScore.player2Name,
+            player1Scores: matchScore.player1Scores,
+            player2Scores: matchScore.player2Scores,
+            player1LiveGameScore: matchScore.player1LiveGameScore,
+            player2LiveGameScore: matchScore.player2LiveGameScore,
+            player1Avatar: ImagePaths.player1s[index+1],
+            player2Avatar: ImagePaths.player2s[index+1],
+            player1DidWin: matchScore.player1DidWin),
+      );}
+  );
 
 
 
@@ -77,27 +97,30 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
                 ),
 
                 const SizedBox(height: 20,),
-
-
                 InkWell(
                   onTap: ()=> Navigator.pushNamed(context, Routes.matchDetailsPage),
                   child: MatchScoresCard(
-                    round: "1st Round",
-                    arena: "Court 7",
-                    playStatus: "Live",
-                    player1Avatar: "",
-                    player1Name: "R. Nadal",
-                    player1Scores: "3  7  6  7",
-                    // player1Scores: "3  7",
-                    player2Name: "D. Medvedev",
-                    player2Scores: "6  5  3  6",
-                    // player2Scores: "6  6",
-
-                    player2Avatar: "",
-                    player1DidWin: true,
+                      round: "Final",
+                      arena: "Rod Laver Arena",
+                      playStatus: "Live",
+                      player1Name: "R. Nadal",
+                      player2Name: "D. Medvedev",
+                      player1Scores: "2  6  6  6",
+                      player2Scores: "6  7  4  4",
+                      player1LiveGameScore: "7",
+                      player2LiveGameScore: "5",
+                      player1Avatar: ImagePaths.player2s[0],
+                      player2Avatar: ImagePaths.player2s[1],
+                      player1DidWin: true
 
                   ),
                 ),
+                const SizedBox(height: 8,),
+
+                ...matchScores,
+
+
+
 
               ],
             ),
