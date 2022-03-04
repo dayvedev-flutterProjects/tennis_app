@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tennis_app/ui/pages/intro_page.dart';
+import 'package:tennis_app/utils/colors.dart';
 import 'package:tennis_app/utils/routes.dart';
 
 void main() {
@@ -17,7 +19,11 @@ class MyApp extends StatelessWidget {
       title: 'Tennis App',
       theme: ThemeData(
 
-        primarySwatch: Colors.blue,
+        primarySwatch: AppColors.createMaterialColor(Colors.white),
+        appBarTheme: AppBarTheme(
+          //brightness: Brightness.dark,
+          systemOverlayStyle: SystemUiOverlayStyle.dark, // helps system overlay text color white
+        ),
       ),
       home: const IntroPage(),
       routes: Routes.registerRoutes(),
