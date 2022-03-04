@@ -134,7 +134,7 @@ class MatchScoresCard extends StatelessWidget {
                   visualDensity: VisualDensity(horizontal: -4, vertical: -4),
                   contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
                   leading: CircleAvatar(
-                    child: Icon(Icons.person_outline),
+                    backgroundImage: AssetImage(player1Avatar),
                   ),
                   title: Text("$player1Name"),
                   // subtitle: Text("ATP"),
@@ -179,7 +179,7 @@ class MatchScoresCard extends StatelessWidget {
                   visualDensity: VisualDensity(horizontal: -4, vertical: -4),
                   contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
                   leading: CircleAvatar(
-                    child: Icon(Icons.person_outline),
+                    backgroundImage: AssetImage(player2Avatar),
                   ),
                   title: Text("$player2Name"),
                   // subtitle: Text("ATP"),
