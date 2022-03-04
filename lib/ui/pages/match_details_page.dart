@@ -70,7 +70,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 borderRadius: BorderRadius.circular(14.0),
                                 //radius: 15,
                                 //backgroundColor: Colors.transparent,
-                                child: Flag.fromString("AU",
+                                child: Flag.fromString("ES",
                                   height: 28,
                                   width: 28,
                                   flagSize: FlagSize.size_1x1,
@@ -78,7 +78,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                               ),
                               child: CircleAvatar(
                                 radius: 40,
-                                child: Icon(Icons.person_outline),
+                                backgroundImage: AssetImage(ImagePaths.player1s[0]),
                               ),
 
                             ),
@@ -90,7 +90,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 borderRadius: BorderRadius.circular(14.0),
                                 //radius: 15,
                                 //backgroundColor: Colors.transparent,
-                                child: Flag.fromString("AU",
+                                child: Flag.fromString("RU",
                                   height: 28,
                                   width: 28,
                                   flagSize: FlagSize.size_1x1,
@@ -98,7 +98,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                               ),
                               child: CircleAvatar(
                                 radius: 40,
-                                child: Icon(Icons.person_outline),
+                                backgroundImage: AssetImage(ImagePaths.player2s[0]),
                               ),
 
                             ),
@@ -140,7 +140,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
-                              tournamentRound: "12",
+                              tournamentRound: "3",
                               boxColor: AppColors.appLightGreen,
                               textColor: Colors.white,
 
@@ -154,7 +154,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
-                              tournamentRound: "8",
+                              tournamentRound: "23",
                               boxColor: AppColors.appLightGreen,
                               textColor: Colors.white,
                             ),
@@ -170,7 +170,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
-                              tournamentRound: "12",
+                              tournamentRound: "5",
                               boxColor: AppColors.appLightGreen,
                               textColor: Colors.white,
                             ),
@@ -183,7 +183,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
-                              tournamentRound: "8",
+                              tournamentRound: "5",
                               boxColor: AppColors.appLightGreen,
                               textColor: Colors.white,
                             ),
@@ -206,11 +206,11 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("74%",
+                                    Text("62%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("1st serve in",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
-                                    Text("69%",
+                                    Text("70%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                   ],
 
@@ -228,7 +228,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.74,
+                                      percent: 0.62,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -242,7 +242,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.69,
+                                      percent: 0.70,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -283,11 +283,11 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("74%",
+                                    Text("67%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("Win 1st serve",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
-                                    Text("69%",
+                                    Text("70%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                   ],
 
@@ -305,7 +305,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.74,
+                                      percent: 0.67,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -319,7 +319,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.69,
+                                      percent: 0.70,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -360,11 +360,11 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("74%",
+                                    Text("51%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("Win 2nd serve",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
-                                    Text("69%",
+                                    Text("46%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                   ],
 
@@ -382,7 +382,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.74,
+                                      percent: 0.51,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -396,7 +396,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                       animationDuration: 1000,
                                       lineHeight: 10.0,
                                       //leading: Text("Cumulative Progress: "),
-                                      percent: 0.69,
+                                      percent: 0.46,
                                       //center: Text("20.0%"),
                                       linearStrokeCap: LinearStrokeCap.roundAll,
                                       backgroundColor: Colors.grey[300],
@@ -435,26 +435,27 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
 
                 ],
               ),
+
               Positioned(
                 top: 325,
                 width: 390,
                 child: MatchScoresCard(
-                  round: "1st Round",
-                  arena: "Court 7",
-                  playStatus: "Live",
-                  player1Avatar: "",
-                  player1Name: "R. Nadal",
-                  player1Scores: "3  7  6  7",
-                  // player1Scores: "3  7",
-                  player2Name: "D. Medvedev",
-                  player2Scores: "6  5  3  6",
-                  // player2Scores: "6  6",
-
-                  player2Avatar: "",
-                  player1DidWin: true,
+                    round: "Final",
+                    arena: "Rod Laver Arena",
+                    playStatus: "Live",
+                    player1Name: "R. Nadal",
+                    player2Name: "D. Medvedev",
+                    player1Scores: "2  6  6  6",
+                    player2Scores: "6  7  4  4",
+                    player1LiveGameScore: "7",
+                    player2LiveGameScore: "5",
+                    player1Avatar: ImagePaths.player2s[0],
+                    player2Avatar: ImagePaths.player2s[1],
+                    player1DidWin: true
 
                 ),
               ),
+
             ],
           ),
         ),
