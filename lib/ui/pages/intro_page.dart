@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tennis_app/utils/image_paths.dart';
 import 'package:tennis_app/utils/routes.dart';
 
@@ -8,6 +9,10 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.dark,
+    ));
     return Container(
       //padding: EdgeInsets.only(left: 50, right: 50, bottom: 60),
       decoration: BoxDecoration(
