@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
         primarySwatch: AppColors.createMaterialColor(Colors.white),
-        appBarTheme: AppBarTheme(
-          //brightness: Brightness.dark,
+        appBarTheme: const AppBarTheme(
           systemOverlayStyle: SystemUiOverlayStyle.dark, // helps system overlay text color white
         ),
       ),
