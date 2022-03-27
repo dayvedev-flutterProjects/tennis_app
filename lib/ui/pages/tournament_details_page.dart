@@ -109,9 +109,9 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
                       player2Scores: "6  7  4  4",
                       player1LiveGameScore: "7",
                       player2LiveGameScore: "5",
-                      player1Avatar: ImagePaths.player2s[0],
-                      player2Avatar: ImagePaths.player2s[1],
-                      player1DidWin: true
+                      player1Avatar: ImagePaths.player1s[0],
+                      player2Avatar: ImagePaths.player2s[0],
+                      player1DidWin: null
 
                   ),
                 ),
