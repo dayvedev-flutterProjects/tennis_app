@@ -35,11 +35,9 @@ class MatchScoresCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //height: 200,
       margin: const EdgeInsets.symmetric(horizontal: 12.0),
       padding: const EdgeInsets.only(top:10.0, bottom: 12.0, right: 8.0),
       decoration: BoxDecoration(
-        //borderRadius: BorderRadius.circular(17),
         borderRadius: BorderRadius.circular(20),
         color: Colors.white,
       ),
@@ -62,16 +60,6 @@ class MatchScoresCard extends StatelessWidget {
                         text: "$arena",
                       ),
 
-                      // TextSpan(
-                      //   text: "$round \u{FF65} ",
-                      // ),
-                      //
-                      // const WidgetSpan(
-                      //   child: Icon(Icons.access_time, size: 16, color: Colors.white,),
-                      // ),
-                      // TextSpan(
-                      //   text: time,
-                      // ),
                     ],
 
                   ),
@@ -98,16 +86,6 @@ class MatchScoresCard extends StatelessWidget {
                         style: TextStyle(color: playStatus.toLowerCase() == 'live' ? Colors.red: Colors.black54),
                       ),
 
-                      // TextSpan(
-                      //   text: "$round \u{FF65} ",
-                      // ),
-                      //
-                      // const WidgetSpan(
-                      //   child: Icon(Icons.access_time, size: 16, color: Colors.white,),
-                      // ),
-                      // TextSpan(
-                      //   text: time,
-                      // ),
                     ],
 
                   ),
