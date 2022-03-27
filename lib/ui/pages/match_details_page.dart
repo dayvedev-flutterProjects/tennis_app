@@ -28,6 +28,8 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
         title: const Text("R. Nadal v D. Medvedev", style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black),),
         elevation: 0,
         backgroundColor: Colors.transparent,
+        shadowColor: Colors.black,
+
 
       ),
 
@@ -438,7 +440,8 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
 
               Positioned(
                 top: 325,
-                width: 390,
+                left: 5,
+                right: 5,
                 child: MatchScoresCard(
                     round: "Final",
                     arena: "Rod Laver Arena",
@@ -449,8 +452,8 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                     player2Scores: "6  7  4  4",
                     player1LiveGameScore: "7",
                     player2LiveGameScore: "5",
-                    player1Avatar: ImagePaths.player2s[0],
-                    player2Avatar: ImagePaths.player2s[1],
+                    player1Avatar: ImagePaths.player1s[0],
+                    player2Avatar: ImagePaths.player2s[0],
                     player1DidWin: true
 
                 ),
