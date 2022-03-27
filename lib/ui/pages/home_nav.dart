@@ -20,7 +20,6 @@ class _HomeNavPageState extends State<HomeNavPage> {
   @override
   void initState() {
     super.initState();
-    //fireGetAppDropdownsRequest(); //todo move to App wide access like main.dart
 
   }
 
@@ -32,14 +31,6 @@ class _HomeNavPageState extends State<HomeNavPage> {
     return Scaffold(
       backgroundColor: Colors.white,
 
-      //todo test on android status bar is still as scaffold backgroundColor
-      // appBar: _cIndex == 0 || _cIndex == 2  ? null:  AppBar(
-      //   elevation: 0,
-      //   automaticallyImplyLeading: false,
-      //   // backgroundColor: Colors.grey[200],
-      //   title: Text(_title),
-      //
-      // ),
 
       body: SafeArea(
         child: PageTransitionSwitcher(
@@ -57,12 +48,8 @@ class _HomeNavPageState extends State<HomeNavPage> {
           child: IndexedStack(
             index: _cIndex,
             key: ValueKey<int>(_cIndex),
-            children: [
-              const HomePage(),
-              // PaymentsPage(),
-              // const RequestBinPage(),
-              // HelpPage(),
-              // MenuPage(),
+            children: const [
+              HomePage(),
 
             ],
 
