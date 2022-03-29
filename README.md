@@ -3,8 +3,7 @@
 
  A Flutter project created in my #uigym to build the User Interface of a tennis app concept by
  <a href= "https://dribbble.com/shots/14200755-Tennis-iOS-app-concept-play-the-prototype-on-figma" target="_blank">
- Kate Dihich for UIGiants<a>
- on dribbble.
+ Kate Dihich for UIGiants on dribbble.<a>
  Thank you Kate..🙃
 
  I am working to enhance my flutter skills by implementing different designs that intrigue me
