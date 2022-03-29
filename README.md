@@ -1,19 +1,9 @@
 # tennis_app
+#uigym
 
- A Flutter project to build the UI of a tennis app concept by Kate Dihich for UIGiants
- on dribbble.
+ A Flutter project created in my #uigym to build the User Interface of a tennis app concept by
+ Kate Dihich for UIGiants on dribbble.
+ Thank you Kate..🙃
 
-
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ I am working to enhance my flutter skills by implementing different designs that intrigue me
+ by working out said skills at my #uigym. Feel free to collaborate or reach out.🤓🤝😎
