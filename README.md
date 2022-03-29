@@ -1,6 +1,9 @@
 # tennis_app
 
-A Flutter project to build the UI of a tennis app concept by UIGiants on dribbble.
+ A Flutter project to build the UI of a tennis app concept by Kate Dihich for UIGiants
+ on dribbble.
+
+
 
 ## Getting Started
 
