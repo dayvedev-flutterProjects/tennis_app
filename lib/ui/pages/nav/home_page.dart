@@ -96,9 +96,7 @@ class _HomePageState extends State<HomePage> {
               height: 200,
               viewportFraction: 0.9,
               autoPlay: true,
-               enableInfiniteScroll: false,
-               //aspectRatio: 2.1,
-               //enlargeCenterPage: true,
+              enableInfiniteScroll: false,
               onPageChanged: (index, reason) {
                 setState(() {
                   _current = index;
@@ -125,7 +123,6 @@ class _HomePageState extends State<HomePage> {
                   child: Wrap(
                     children: List.generate(_choicesList.length, (index) {
                       return ChoiceChip(
-                        //labelPadding: EdgeInsets.all(12.0),
                         label: Text(
                           _choicesList[index],
                           style: defaultChoiceIndex == index?
