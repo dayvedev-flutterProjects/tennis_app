@@ -14,7 +14,6 @@ class IntroPage extends StatelessWidget {
       statusBarBrightness: Brightness.dark,
     ));
     return Container(
-      //padding: EdgeInsets.only(left: 50, right: 50, bottom: 60),
       decoration: BoxDecoration(
         image: DecorationImage(
           image: const ExactAssetImage(ImagePaths.introBg),
