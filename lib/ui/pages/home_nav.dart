@@ -26,8 +26,7 @@ class _HomeNavPageState extends State<HomeNavPage> {
 
   @override
   Widget build(BuildContext context) {
-    // fireGetRegionsRequest();
-    // fireGetPropertyTypesRequest();
+
     return Scaffold(
       backgroundColor: Colors.white,
 
