@@ -63,7 +63,7 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
                 InkWell(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text("All Matches"),
                       Icon(Icons.keyboard_arrow_down, size: 8, color: Colors.black,),
                     ],
@@ -71,7 +71,7 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
                   onTap: ()=> showModalBottomSheet(
                       isScrollControlled: true,
                       context: context,
-                      shape: RoundedRectangleBorder(
+                      shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -136,9 +136,9 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
         mainAxisSize: MainAxisSize.min,
         children:  <Widget>[
           ListTile(
-            trailing: Icon(Icons.clear),
+            trailing: const Icon(Icons.clear),
             //leading: const Icon(Icons.photo),
-            title:  Center(child: const Text('          SELECT EVENT')),
+            title:  const Center(child: Text('          SELECT EVENT')),
             onTap: () {
               Navigator.pop(context);
             },
@@ -159,43 +159,6 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
               );
             }),
           ),
-
-          // const ListTile(
-          //   leading: Icon(Icons.arrow_forward),
-          //   title:  Text('Dial *110#'),
-          //   // onTap: () {
-          //   //   Navigator.pop(context);
-          //   // },
-          // ),
-          // const ListTile(
-          //   leading:  Icon(Icons.arrow_forward),
-          //   title:  Text('Choose option 4- (Make Payments)'),
-          //   // onTap: () {
-          //   //   Navigator.pop(context);
-          //   // },
-          // ),
-          // const ListTile(
-          //   leading:  Icon(Icons.arrow_forward),
-          //   title:  Text('Choose option 4- (Generate Voucher)'),
-          //   // onTap: () {
-          //   //   Navigator.pop(context);
-          //   // },
-          // ),
-          // const ListTile(
-          //   leading:  Icon(Icons.arrow_forward),
-          //   title:  Text('Enter Your Vodafone Cash Pin'),
-          //   // onTap: () {
-          //   //   Navigator.pop(context);
-          //   // },
-          // ),
-          //
-          // const ListTile(
-          //   leading:  Icon(Icons.arrow_forward),
-          //   title:  Text('A 6-digit Voucher Code will be sent to you via SMS.'),
-          //   // onTap: () {
-          //   //   Navigator.pop(context);
-          //   // },
-          // ),
 
         ],
       ),
