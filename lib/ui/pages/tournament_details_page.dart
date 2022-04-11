@@ -137,7 +137,6 @@ class _TournamentDetailsPageState extends State<TournamentDetailsPage> {
         children:  <Widget>[
           ListTile(
             trailing: const Icon(Icons.clear),
-            //leading: const Icon(Icons.photo),
             title:  const Center(child: Text('          SELECT EVENT')),
             onTap: () {
               Navigator.pop(context);
