@@ -45,7 +45,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
 
                   Container(
                     padding: const EdgeInsets.all(10.0),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(image: AssetImage(ImagePaths.matchScoreDetailsHeader),
                         fit: BoxFit.cover,
                       ),
@@ -138,7 +138,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
+                          children: const [
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
@@ -168,7 +168,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
 
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
+                          children: const [
                             TournamentRoundsBox(
                               minHeight: 45,
                               minWidth: 45,
@@ -207,7 +207,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("62%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("1st serve in",
@@ -259,7 +259,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("48/65",
                                       style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold, color: Colors.black38),),
 
@@ -284,7 +284,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("67%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("Win 1st serve",
@@ -336,7 +336,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("48/65",
                                       style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold, color: Colors.black38),),
 
@@ -361,7 +361,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
+                                  children: const [
                                     Text("51%",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
                                     Text("Win 2nd serve",
